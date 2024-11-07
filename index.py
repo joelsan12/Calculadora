@@ -72,7 +72,7 @@ def abrir_ventana_operacion(op):
     btn_calcular = tk.Button(operacion_window, text="Calcular", command=calcular)
     btn_calcular.pack()
 
-def Resultado():  
+def opciones():  
     op = entrada()
     if op in [1, 2, 3, 4]:
         abrir_ventana_operacion(op)
@@ -83,7 +83,7 @@ def Resultado():
 entry_op = tk.Entry(root)
 entry_op.pack()
 
-boton = tk.Button(root, text="Obtener resultado", command=Resultado)
+boton = tk.Button(root, text="Obtener resultado", command=opciones)
 boton.pack()
 
 
